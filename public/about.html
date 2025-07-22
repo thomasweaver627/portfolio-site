@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TW | About</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header> 
+          <div class="container header-content">
+            <h1>Thomas Weaver | About</h1>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">🌗Theme</button>
+            <script>
+                document.getElementById('themeToggle').onclick = () => {
+                    document.body.classList.toggle('dark');
+                };
+            </script>
+          </div>
+        </header>
+        <main>
+          <button id="menuBtn" class="btn">Menu</button>
+            <nav id="navMenu" style="display:none;">
+                <ul>
+                    <li><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+                    <li><a href="resume.html" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Toggle Menu script-->
+            <script>
+                document.getElementById('menuBtn').onclick = function() {
+                    const nav = document.getElementById('navMenu');
+                    nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+                };
+            </script>
+
+            <h2>Bio</h2>
+            <p>Thomas Weaver is a growing developer in the Greensboro Triad area of North Carolina.
+                He has 3 years of experience in building automation tools with Microsoft Access, Excel, and Visual Basic for Applications (VBA) for the second largest credit union in the United States.
+                While his current position is limited to these technologies, he is always trying to expand his programming knowledge and skills, such as learning JavaScript, HTML, and CSS.
+                With over 7 years of support experience, he is passionate about customer success, data-driven decisions, and efficient and iterative design 
+            </p>
+
+            
+
+            
+        </main>
+        <footer>
+            <p>&copy; 2025 Thomas Weaver</p>
+        </footer>
+    </body>
+</html>

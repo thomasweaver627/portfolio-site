@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TW | Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header> 
+          <div class="container header-content">
+            <h1>Thomas Weaver | Developer & Support Specialist</h1>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">🌗Theme</button>
+            <script>
+                document.getElementById('themeToggle').onclick = () => {
+                    document.body.classList.toggle('dark');
+                };
+            </script>
+          </div>
+        </header>
+        <main>
+            <!-- <p>This is where the content goes.</p> -->
+            <button id="menuBtn" class="btn">Menu</button>
+            <nav id="navMenu" style="display:none;">
+                <ul>
+                    <li><a href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
+                    <li><a href="resume.html" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Toggle Menu script-->
+            <script>
+                document.getElementById('menuBtn').onclick = function() {
+                    const nav = document.getElementById('navMenu');
+                    nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+                };
+            </script>
+
+        
+            <!-- Navigate to future projects-->
+            <button id="projOne" class="btn">Project 1</button>
+            <button id="projTwo" class="btn">Project 2</button>
+            <button id="projThree" class="btn">Project 3</button>
+            
+            
+            
+            
+        </main>
+        <footer>
+            <p>&copy; 2025 Thomas Weaver</p>
+        </footer>
+    </body>
+</html>
